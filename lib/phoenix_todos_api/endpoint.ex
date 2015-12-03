@@ -35,5 +35,6 @@ defmodule PhoenixTodosApi.Endpoint do
     key: "_phoenix_todos_api_key",
     signing_salt: "i8QEga4t"
 
+  plug CORSPlug, [origin: "http://localhost:9000"]
   plug PhoenixTodosApi.Router
 end
